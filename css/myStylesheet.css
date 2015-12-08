@@ -6,7 +6,7 @@
 
 body {
   /*font: 13px/1.5 "Helvetica Neue", Arial, "Liberation Sans", FreeSans, sans-serif;*/
-  font-family:  "Prosto One", sans-serif;
+  font-family:  Lato, "Prosto One", sans-serif;
 }
 
 .logoPF{
@@ -47,7 +47,7 @@ h1.header{
 }
 
 .grid_12_cust_footer{
-  border: 1px solid lightgrey;
+  border: 1px solid #D8BFD8;
   box-sizing: border-box;
   background-image: url('../images/footerbg.jpg');
   width: 105%;
@@ -60,19 +60,30 @@ h1.header{
 }
 
 .grid_12_cust_awardback{
-  background: #6fb85b;
+  background: #D8BFD8;
   background-image: url('../images/bestback.jpg');
   background-position: center top;
   background-size: 100%;
   text-align: center;
+  margin-bottom: 0px;
+  height: 100%; box-sizing: border-box;
+}
+
+.grid_12_cust_awardpara{
+  background: #D8BFD8;
+  background-size: 100%;
+  margin-left: 0px;
+  box-sizing: border-box;
+  text-align: justify;
 }
 
 ul.footersocial li{
-  margin-top: 5px;
+  margin-top: 10px;
   display: inline;
+  text-align: right;
 }
 
-p#para_awardback{
+#para_awardback{
   background: rgba(255, 255, 255, 0.68);
   color: black;
   padding: 5px;
@@ -134,4 +145,8 @@ ul#navList li:hover a:hover{
 
 ul#navList li:hover .subMenu01{
   display: block;
+}
+
+li {
+  list-style-type: none;
 }
