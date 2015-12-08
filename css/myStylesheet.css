@@ -1,31 +1,44 @@
+@font-face {
+    font-family: "Prosto One";
+    src: local('../fonts/ProstoOne.ttf'),
+         url('ProstoOne.ttf') format('truetype');
+}
+
 body {
-  font: 13px/1.5 "Helvetica Neue", Arial, "Liberation Sans", FreeSans, sans-serif;
+  /*font: 13px/1.5 "Helvetica Neue", Arial, "Liberation Sans", FreeSans, sans-serif;*/
+  font-family:  "Prosto One", sans-serif;
+}
+
+.logoPF{
+  margin-top: 0px;
+  height: 100%;
+  width:  100%;
 }
 
 h1.header{
+  font-family: "Prosto One";
   font-size: 70px;
-  color: lightpink;
+  color: #FF69B4;
   text-align: left;
   font-weight: bold;
   height: 75px;
-  background-image: url('../images/headerimage.jpg');
 }
 
-h3.mens{
+.parasnippet{
   height: 145px;
-  background-image: url('../images/Mensfragrance.jpg');
-  background-size: cover;
-}
-
-h3.womens{
-  height: 145px;
-  background-image: url('../images/womensfragrance.jpg');
-  background-size: cover;
+  padding: 0px 5px 5px 5px;
 }
 
 .grid_12_cust{
-  margin-top: 10px;
+  margin-top: 30px;
   margin-bottom: 10px;
+}
+
+.grid_9_navi{
+  margin-top: 30px;
+  margin-bottom: 50px;
+  margin-left: 30px;
+  margin-right: 0px;
 }
 
 .grid_12_cust_border{
@@ -43,6 +56,7 @@ h3.womens{
 .grid_4_cust{
   margin-top: 5px;
   margin-bottom: 15px;
+  /*padding:5px 0px 5px 0px;*/
 }
 
 .grid_12_cust_awardback{
@@ -62,12 +76,13 @@ p#para_awardback{
   background: rgba(255, 255, 255, 0.68);
   color: black;
   padding: 5px;
-  line-height: 2em;
+  line-height: 1em;
   text-align: center;
 }
 
 a.continue_link{
-  text-align: right; display: block;
+  text-align: right;
+  display: block;
 }
 
 #navList li{
@@ -96,7 +111,6 @@ a.continue_link{
 
 ul#navList, ul.subMenu01{
   list-style-type: none;
-  /*background-color: rgba(140, 210, 245, 0.59);*/
 }
 
 ul#navList .subMenu01 a{
