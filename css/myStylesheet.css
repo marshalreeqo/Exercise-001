@@ -75,12 +75,15 @@ h1.header{
   margin-left: 0px;
   box-sizing: border-box;
   text-align: justify;
+  list-style-type: circle;
 }
 
-ul.footersocial li{
+ul.footersocial li, ul.footersocial a{
   margin-top: 10px;
   display: inline;
   text-align: right;
+  list-style-type: none;
+  color: white;
 }
 
 #para_awardback{
@@ -145,8 +148,4 @@ ul#navList li:hover a:hover{
 
 ul#navList li:hover .subMenu01{
   display: block;
-}
-
-li {
-  list-style-type: none;
 }
