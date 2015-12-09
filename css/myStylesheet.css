@@ -1,17 +1,24 @@
 @font-face {
-    font-family: "Prosto One";
-    src: local('../fonts/ProstoOne.ttf'),
-         url('ProstoOne.ttf') format('truetype');
+  font-family: "Prosto One";
+  src: local('../fonts/ProstoOne.ttf'),
+  url('../fonts/ProstoOne.ttf') format('truetype');
 }
 
 body {
   font-family:  Lato, "Prosto One", "Helvetica Neue", sans-serif;
+  background-color: rgb(139, 98, 135);
+}
+
+.pageHead{
+  background-color: #F5F5F5;
 }
 
 .logoPF{
   margin-top: 0px;
+  margin-bottom: 1px;
   height: 100%;
   width:  100%;
+  background-color: #F5F5F5;
 }
 
 h1.header{
@@ -21,6 +28,7 @@ h1.header{
   text-align: left;
   font-weight: bold;
   height: 75px;
+  background-color: #F5F5F5;
 }
 
 .parasnippet{
@@ -29,8 +37,10 @@ h1.header{
 }
 
 .grid_12_cust{
-  margin-top: 30px;
-  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-bottom: 3px;
+  margin-left: 5px;
+  background-color: #D8BFD8;
 }
 
 .grid_9_navi{
@@ -38,6 +48,7 @@ h1.header{
   margin-bottom: 50px;
   margin-left: 30px;
   margin-right: 0px;
+  background-color: #F5F5F5;
 }
 
 .grid_12_cust_border{
@@ -48,31 +59,53 @@ h1.header{
 .grid_12_cust_footer{
   border: 1px solid #D8BFD8;
   box-sizing: border-box;
-  background-image: url('../images/footerbg.jpg');
+  background: url('../images/footerbg.jpg');
   width: 105%;
+  margin-bottom: 3px;
+  /*background: -webkit-mask-image: -webkit-linear-gradient(right, rgba(0,0,0,1), rgba(0,0,0,0));*/
+  /*background: -moz-linear-gradient(right, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%); /* FF3.6+*/
+  /*background: -webkit-gradient(linear, right top, left top, color-stop(0%,rgba(255,255,255,0)), color-stop(100%,rgba(255,255,255,1))); /* Chrome,Safari4+ */*/
+  /*background: -webkit-linear-gradient(right, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%); /* Chrome10+,Safari5.1+ */*/
+  /*background: -o-linear-gradient(right, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%); /* Opera 11.10+ */*/
+  /*background: -ms-linear-gradient(right, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%); /* IE10+ */*/
 }
 
+.grid_12_cust_footer ul a{
+  text-decoration: none;
+  list-style-type: none;
+  background-color: #D8BFD8;
+}
+
+.grid_12_cust_footer ul li{
+  text-decoration: none;
+  list-style-type: none;
+  color: #D8BFD8;
+}
 .grid_4_cust{
   margin-top: 5px;
-  margin-bottom: 15px;
-  /*padding:5px 0px 5px 0px;*/
+  margin-bottom: 5px;
+  margin-left: 5px;
+  margin-right: 15px;
 }
 
 .grid_12_cust_awardback{
   background: #D8BFD8;
   background-image: url('../images/bestback.jpg');
-  background-position: center top;
   background-size: 100%;
   text-align: center;
   margin-bottom: 0px;
-  height: 100%; box-sizing: border-box;
+  height: 520px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-left: 0px;
 }
 
 .grid_12_cust_awardpara{
-  background: #D8BFD8;
+  padding: 0px 5px 5px 5px;
+  background-color: #D8BFD8;
   background-size: 100%;
   margin-left: 0px;
-  box-sizing: border-box;
+  margin-top: 0px;
   text-align: justify;
   list-style-type: circle;
 }
@@ -83,19 +116,54 @@ ul.footersocial li, ul.footersocial a{
   text-align: right;
   list-style-type: none;
   color: white;
+  text-decoration: none;
 }
 
 #para_awardback{
+  background: rgba(255, 255, 255, 0.68);
+  padding: 0px 5px 5px 5px;
+  color: black;
+  padding: 5px;
+  line-height: 1em;
+  text-align: center;
+  margin-top: 120px;
+  font-weight: bold;
+  font-size: 17px;
+}
+
+#para_footer{
   background: rgba(255, 255, 255, 0.68);
   color: black;
   padding: 5px;
   line-height: 1em;
   text-align: center;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#para_footer a{
+  text-decoration: none;
 }
 
 a.continue_link{
   text-align: right;
   display: block;
+}
+
+.fragfamily{
+  margin-left: 5px;
+  background-color: #D8BFD8;
+  margin-right: 0px;
+  box-sizing: border-box;
+  width: 105%;
+  margin-top: 5px;
+  padding: 0px 0px 0px 0px;
+}
+
+.fragfamily a, .fragfamily li{
+  text-decoration: none;
+  list-style-type: none;
+  text-align: justify;
 }
 
 #navList li{
@@ -148,3 +216,5 @@ ul#navList li:hover a:hover{
 ul#navList li:hover .subMenu01{
   display: block;
 }
+
+ul li a{}
